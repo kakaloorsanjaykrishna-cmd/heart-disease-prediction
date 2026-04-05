@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heart Disease Predictor ❤️</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>❤️ Heart Disease Prediction</h2>
+
+    <div class="form-grid">
+
+        <input id="age" placeholder="Age">
+
+        <select id="sex">
+            <option value="">Sex</option>
+            <option value="1">Male</option>
+            <option value="0">Female</option>
+        </select>
+
+        <select id="cp">
+            <option value="">Chest Pain</option>
+            <option value="0">Typical</option>
+            <option value="1">Atypical</option>
+            <option value="2">Non-anginal</option>
+            <option value="3">Asymptomatic</option>
+        </select>
+
+        <input id="trestbps" placeholder="Blood Pressure">
+        <input id="chol" placeholder="Cholesterol">
+
+        <select id="fbs">
+            <option value="">Fasting Sugar</option>
+            <option value="1">True</option>
+            <option value="0">False</option>
+        </select>
+
+        <select id="restecg">
+            <option value="">ECG</option>
+            <option value="0">Normal</option>
+            <option value="1">Abnormal</option>
+        </select>
+
+        <input id="thalach" placeholder="Max Heart Rate">
+
+        <select id="exang">
+            <option value="">Exercise Angina</option>
+            <option value="1">Yes</option>
+            <option value="0">No</option>
+        </select>
+
+        <input id="oldpeak" placeholder="Oldpeak">
+
+        <select id="slope">
+            <option value="">Slope</option>
+            <option value="0">Upsloping</option>
+            <option value="1">Flat</option>
+            <option value="2">Downsloping</option>
+        </select>
+
+        <select id="ca">
+            <option value="">CA</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <select id="thal">
+            <option value="">Thal</option>
+            <option value="0">Normal</option>
+            <option value="1">Fixed Defect</option>
+            <option value="2">Reversible Defect</option>
+        </select>
+
+    </div>
+
+    <button onclick="predict()">Predict</button>
+
+    <h3 id="result"></h3>
+    <p id="tip"></p>
+
+    <h4>📊 Risk Analysis</h4>
+    <canvas id="riskChart"></canvas>
+
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
